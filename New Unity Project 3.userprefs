@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SmoothFollow2.js">
+    <Files>
+      <File FileName="Assets\Scripts\LabDoor.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\LabDoor.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Enemy.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CheckPoint.js" Line="9" Column="3" />
+      <File FileName="Assets\Scripts\PlayerRespawn.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MovingLabDoor.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SmoothFollow2.js" Line="23" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
