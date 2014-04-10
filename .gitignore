@@ -216,6 +216,12 @@ pip-log.txt
 .mr.developer.cfg
 
 #Unity
-Library/FailedAssetImports.txt
-Library/ScriptAssemblies/
-Library/metadata/
+Library/
+Temp/
+Obj/
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
+*.DS_store
