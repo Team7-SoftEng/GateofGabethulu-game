@@ -1,6 +1,5 @@
 ﻿#pragma strict
 
-var Player : GameObject;
 var spawnPoint : Transform;
 
 function OnTriggerEnter(other: Collider) {
