@@ -1,29 +1,19 @@
 ﻿#pragma strict
 
-
+//var animator : Animator;
 function Start () {
-	
+	//animator = gameObject.GetComponent( Animator );
 }
 
 function Update () {
-var AT = gameObject.GetComponent(AnimateTexture);  // Store the AnimateTexture script
-
+	var animator = gameObject.GetComponent( Animator );
 	if(Input.GetKey("a")){  // Player moves Left
-		AT.rowNumber = 0;   // Running animation
+		animator.SetInteger( "Direction", 1 );
 	}
 	else if(Input.GetKey("d")) {   // Player moves right
-		AT.rowNumber = 0;          // Running animation
+		animator.SetInteger( "Direction", 2 );
 	}
-	
-	else if(Input.GetKey("w")) {   // Player moves right
-		AT.rowNumber = 0;          // Running animation
-	}
-	
-	else if(Input.GetKey("s")) {   // Player moves right
-		AT.rowNumber = 0;          // Running animation
-	}
-	
-	else {							// Player not moving
-		AT.rowNumber = 1;			// Change to idle animation
+	else if(!Input.GetKey("w") && !Input.GetKey("s")) {   // Player not moving
+		animator.SetInteger( "Direction", 0 );	
 	}
 }
