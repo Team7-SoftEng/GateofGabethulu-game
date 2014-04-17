@@ -2,9 +2,9 @@
 
 var spawnPoint : Transform;
 
-function OnTriggerEnter(other : Collider) {
+function OnTriggerEnter2D(other : Collider2D) {
 	if(other.tag == "Player") {
-		spawnPoint.position = Vector3(transform.position.x, spawnPoint.position.y, transform.position.z);
+		spawnPoint.position = transform.position;
 		Destroy(gameObject);
 	}
 }

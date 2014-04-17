@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
 private var Xpos: float;
-private var Zpos: float;
+private var Ypos: float;
 private var max: boolean;
 
 var Motion: boolean;
@@ -10,11 +10,11 @@ var step: float;
 
 function Start () {
 	Xpos = transform.position.x;
-	Zpos = transform.position.z;
+	Ypos = transform.position.y;
 
 }
 
-function Update () {
+function FixedUpdate () {
 
 	// SET MAX
 	if(Motion) { // Horizontal
@@ -24,9 +24,9 @@ function Update () {
 			max = false;
 			}
 	} else {    // Vertical movement
-		if(transform.position.z >= Zpos + maxAmount) {
+		if(transform.position.y >= Ypos + maxAmount) {
 			max = true;
-		} else if(transform.position.z <= Zpos) {
+		} else if(transform.position.y <= Ypos) {
 			max = false;
 			}
 		}
@@ -41,10 +41,10 @@ function Update () {
 		} 
 	} else {
 	if(!max) {
-			transform.position.z += step;
+			transform.position.y += step;
 		} 
 		else {
-			transform.position.z -= step;
+			transform.position.y -= step;
 		} 
 	}
 

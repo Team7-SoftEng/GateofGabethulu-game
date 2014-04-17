@@ -2,7 +2,7 @@
 
 var spawnPoint : Transform;
 
-function OnTriggerEnter(other: Collider) {
+function OnTriggerEnter2D(other: Collider2D) {
 	if(other.tag == "Player"){
 		other.transform.position = spawnPoint.position;
 		var sf = Camera.main.GetComponent(SmoothFollow2);

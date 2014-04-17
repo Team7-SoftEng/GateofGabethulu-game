@@ -1,10 +1,8 @@
 ﻿#pragma strict
 
-private var motor : CharacterMotor;
+var maxSpeed = 8;
 
 function Start () {
-
-	motor = GetComponent( CharacterMotor );
 }
 
 function Update () {
@@ -13,7 +11,7 @@ function Update () {
 	var pTransform : Transform;
 	for ( var child : GameObject in allObjects )
 	{
-		var ldist = Vector3.Distance( child.transform.position, transform.position );
+		var ldist = Vector2.Distance( child.transform.position, transform.position );
 		
 		if ( ldist < dist )
 		{
@@ -24,11 +22,13 @@ function Update () {
 	
 	if ( dist < 10 )
 	{
-		motor.inputMoveDirection = Vector3.Normalize(  pTransform.position - transform.position );
+		var vel : Vector2 = pTransform.position - transform.position;
+		vel.Normalize();
+		vel *= maxSpeed;
+		rigidbody2D.velocity = vel;
 	}
 	else
 	{
-		motor.inputMoveDirection = Vector3( 0, 0, 0 );
+		rigidbody2D.velocity = Vector2( 0, 0 );
 	}
 }
-@script RequireComponent (CharacterMotor)
