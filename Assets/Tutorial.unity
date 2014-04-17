@@ -2294,6 +2294,7 @@ GameObject:
   - 50: {fileID: 2043121372}
   - 61: {fileID: 2043121371}
   - 114: {fileID: 2043121373}
+  - 114: {fileID: 2043121374}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Player
@@ -2339,6 +2340,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 8
+--- !u!114 &2043121374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2043121370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8051c8e270c64b74d84c17fb779dc6a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+  spawnPoint: {fileID: 163721101}
 --- !u!4 &2043121375
 Transform:
   m_ObjectHideFlags: 0
