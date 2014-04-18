@@ -1,7 +1,9 @@
 #pragma strict
 public var health : int = 100;
 public var spawnPoint : Transform;
-private var maxHealth : int;
+
+@HideInInspector
+public var maxHealth : int;
 
 function Start()
 {
@@ -12,6 +14,7 @@ function Update()
 {
 	if ( health <= 0 )
 	{
+		// respawn the player
 		transform.position = spawnPoint.position;
 		var sf = Camera.main.GetComponent(SmoothFollow2);
 		sf.target = transform;
