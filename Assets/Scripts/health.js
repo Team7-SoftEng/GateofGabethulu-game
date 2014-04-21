@@ -8,6 +8,7 @@ public var maxHealth : int;
 function Start()
 {
 	maxHealth = health;
+	transform.position = spawnPoint.position; // spawn at the correct point
 }
 
 function Update()
