@@ -74,6 +74,96 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &1223818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1223820}
+  - 212: {fileID: 1223819}
+  - 114: {fileID: 1223821}
+  - 61: {fileID: 1223822}
+  - 114: {fileID: 1223823}
+  m_Layer: 0
+  m_Name: weapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1223819
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1223818}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300012, guid: 40bd4073765995a4481a4ce0f0cb2e3c, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &1223820
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1223818}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3.5, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 2}
+  m_Children: []
+  m_Father: {fileID: 2043121375}
+--- !u!114 &1223821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1223818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c9335b36b82c2c4e81fb73fa4b20825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotAround: {fileID: 2043121375}
+  speed: .5
+--- !u!61 &1223822
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1223818}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: .550000072, y: 1.35000014}
+  m_Center: {x: 0, y: 0}
+--- !u!114 &1223823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1223818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e8ab0cca9567744b15a4b34f850558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: 5
+  damagetag: Enemy
 --- !u!1 &141892797
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 5
+  damagetag: 
 --- !u!114 &180140736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,6 +600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 5
+  damagetag: 
 --- !u!114 &808487874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,6 +848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 5
+  damagetag: 
 --- !u!114 &1055237417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,6 +945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 5
+  damagetag: 
 --- !u!114 &1094701167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -919,6 +1013,7 @@ GameObject:
   - 61: {fileID: 1099055586}
   - 114: {fileID: 1099055590}
   - 61: {fileID: 1099055591}
+  - 114: {fileID: 1099055592}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -998,6 +1093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 5
+  damagetag: Player
 --- !u!114 &1099055590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1021,6 +1117,20 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 2.73333335, y: 2.4666667}
   m_Center: {x: 0, y: 0}
+--- !u!114 &1099055592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1099055584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df952a049ec4e8e47b2a8d1d16141b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 15
+  spawnPoint: {fileID: 1686721842}
+  maxHealth: 0
 --- !u!1 &1201327049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 5
+  damagetag: 
 --- !u!1 &1219956970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,6 +1333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 5
+  damagetag: 
 --- !u!114 &1266450431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1695,6 +1807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 5
+  damagetag: 
 --- !u!114 &1504020794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1848,6 +1961,45 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1686721841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1686721842}
+  - 114: {fileID: 1686721843}
+  m_Layer: 0
+  m_Name: EnemySpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1686721842
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686721841}
+  m_LocalRotation: {x: -.705008388, y: 0, z: 0, w: .709199011}
+  m_LocalPosition: {x: 14.3720779, y: 26.7044735, z: 8.20018578}
+  m_LocalScale: {x: 15, y: 5, z: 15}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &1686721843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1686721841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b638f28251ca7434789f93f6bf4abf94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 163721101}
 --- !u!1 &1850815733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +2126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 5
+  damagetag: 
 --- !u!114 &1928633950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2161,6 +2314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 8
+  weapon: {fileID: 1223820}
 --- !u!114 &2043121374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2184,7 +2338,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.7180233, y: 8.0789957, z: -1.72551632}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1223820}
   m_Father: {fileID: 0}
 --- !u!114 &2043121376
 MonoBehaviour:
