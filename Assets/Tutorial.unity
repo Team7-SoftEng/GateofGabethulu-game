@@ -2020,7 +2020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 100000, guid: a178edbb65de4f74796009e050fe079a, type: 2}
-  numEnemies: 100
+  numEnemies: 4
   maxRespawnsPerEnemy: 1
 --- !u!1001 &1694627258
 Prefab:
