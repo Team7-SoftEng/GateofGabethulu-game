@@ -1,8 +1,8 @@
 ﻿#pragma strict
 
 var enemy : GameObject;
-var numEnemies : int;
-var maxDeaths : int;
+var numEnemies : int = 4;
+var maxRespawnsPerEnemy : int = 1;
 
 private var enemies : ArrayList;
 
@@ -13,25 +13,23 @@ function Start () {
 	{
 		var enemy : GameObject = Instantiate(enemy);
 		enemy.SetActive( true );
-		enemy.GetComponent(health).spawnPoint = children[i%children.length].transform;
+		var hComp = enemy.GetComponent(health);
+		hComp.spawnPoint = children[i%children.length].transform;
+		
 		enemies.Add( enemy );
 	}
 }
 
 function Update () {
-	var numDeaths = 0;
-	
 	for ( var i = 0; i < enemies.Count; i++ )
 	{
-		numDeaths += ( enemies[ i ] as GameObject ).GetComponent(health).numDeaths;
-	}
-	
-	if ( numDeaths >= maxDeaths )
-	{
-		for ( i = 0; i < enemies.Count; i++ )
+		var hComp = ( enemies[ i ] as GameObject ).GetComponent(health);
+		
+		if ( hComp.numRespawns > maxRespawnsPerEnemy )
 		{
-			Destroy(enemies[i] as GameObject);
+			Destroy( enemies[i] as GameObject );
+			enemies.RemoveAt( i );
+			i--;
 		}
-		enemies = new ArrayList();
 	}
 }

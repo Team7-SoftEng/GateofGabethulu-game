@@ -1,17 +1,16 @@
 #pragma strict
 public var health : int = 100;
 public var spawnPoint : Transform;
-
 @HideInInspector
 public var maxHealth : int;
 @HideInInspector
-public var numDeaths : int;
+public var numRespawns : int;
 
 function Start()
 {
 	maxHealth = health;
 	transform.position = spawnPoint.position; // spawn at the correct point
-	numDeaths = 0;
+	numRespawns = 0;
 }
 
 function Update()
@@ -20,6 +19,6 @@ function Update()
 	{
 		transform.position = spawnPoint.position;
 		health = maxHealth;
-		numDeaths++;
+		numRespawns++;
 	}
 }

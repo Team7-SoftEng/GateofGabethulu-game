@@ -1977,7 +1977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 100000, guid: a178edbb65de4f74796009e050fe079a, type: 2}
   numEnemies: 4
-  maxDeaths: 4
+  maxRespawnsPerEnemy: 1
 --- !u!1 &1850815733
 GameObject:
   m_ObjectHideFlags: 0
@@ -2307,7 +2307,7 @@ MonoBehaviour:
   health: 20
   spawnPoint: {fileID: 163721101}
   maxHealth: 0
-  numDeaths: 0
+  numRespawns: 0
 --- !u!4 &2043121375
 Transform:
   m_ObjectHideFlags: 0
