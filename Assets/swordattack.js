@@ -1,6 +1,5 @@
 ﻿#pragma strict
 
-public var rotAround : Transform;
 public var speed : float;
 
 function Start () {
@@ -17,6 +16,6 @@ function Update () {
 	
 	if ( down )
 	{
-		transform.RotateAround(rotAround.position, Vector3.forward, 360 * Time.deltaTime * speed );
+		transform.RotateAround(transform.parent.transform.position, Vector3.forward, 360 * Time.deltaTime * speed );
 	}
 }
