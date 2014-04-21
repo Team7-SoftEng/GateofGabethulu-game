@@ -166,7 +166,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 180140733}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: 1, y: 1.00000012}
   m_Center: {x: 0, y: 0}
 --- !u!114 &180140735
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 180140733}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e8ab0cca9567744b15a4b34f850558, type: 3}
   m_Name: 
@@ -720,7 +720,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 808487871}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: 1, y: 1.00000012}
   m_Center: {x: 0, y: 0}
 --- !u!114 &808487873
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 808487871}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e8ab0cca9567744b15a4b34f850558, type: 3}
   m_Name: 
@@ -968,7 +968,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1055237414}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: 1, y: 1.00000012}
   m_Center: {x: 0, y: 0}
 --- !u!114 &1055237416
@@ -977,7 +977,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1055237414}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e8ab0cca9567744b15a4b34f850558, type: 3}
   m_Name: 
@@ -1065,7 +1065,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1094701164}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: 1, y: 1.00000012}
   m_Center: {x: 0, y: 0}
 --- !u!114 &1094701166
@@ -1074,7 +1074,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1094701164}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e8ab0cca9567744b15a4b34f850558, type: 3}
   m_Name: 
@@ -1183,7 +1183,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1201327049}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!33 &1201327052
@@ -1224,7 +1224,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1201327049}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e8ab0cca9567744b15a4b34f850558, type: 3}
   m_Name: 
@@ -1321,7 +1321,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1266450428}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: 1, y: 1.00000012}
   m_Center: {x: 0, y: 0}
 --- !u!114 &1266450430
@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1266450428}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e8ab0cca9567744b15a4b34f850558, type: 3}
   m_Name: 
@@ -1756,7 +1756,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1504020791}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: 1, y: 1.00000012}
   m_Center: {x: 0, y: 0}
 --- !u!114 &1504020793
@@ -1765,7 +1765,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1504020791}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e8ab0cca9567744b15a4b34f850558, type: 3}
   m_Name: 
@@ -2279,7 +2279,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1928633948}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e8ab0cca9567744b15a4b34f850558, type: 3}
   m_Name: 
@@ -2329,7 +2329,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1928633948}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Size: {x: 1, y: 1.00000012}
   m_Center: {x: 0, y: 0}
 --- !u!33 &1928633953
