@@ -82,7 +82,7 @@ function OnGUI()
 			var spriteRect : Rect = new Rect( ( width - aspect.x ) / 2, ( height - aspect.y ) / 2 + height * i, aspect.x, aspect.y ); 
 
 			// find the correct texture coordinates scaled within the range 0..1
-			texRect.Set(texRect.left / twidth, texRect.top / theight, texRect.width / twidth, texRect.height / theight );
+			texRect.Set(texRect.xMin / twidth, texRect.yMin / theight, texRect.width / twidth, texRect.height / theight );
 			
 			// draw the sprite
 			GUI.DrawTextureWithTexCoords( spriteRect, spriteren.sprite.texture, texRect );
