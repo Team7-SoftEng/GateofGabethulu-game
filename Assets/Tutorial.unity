@@ -182,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   damagetag: 
+  repeatTime: .100000001
 --- !u!114 &180140736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,6 +737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   damagetag: 
+  repeatTime: .100000001
 --- !u!114 &808487874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -984,6 +986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   damagetag: 
+  repeatTime: .100000001
 --- !u!114 &1055237417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,6 +1084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   damagetag: 
+  repeatTime: .100000001
 --- !u!114 &1094701167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,6 +1235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   damagetag: 
+  repeatTime: .100000001
 --- !u!1 &1219956970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,6 +1342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   damagetag: 
+  repeatTime: .100000001
 --- !u!114 &1266450431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1772,6 +1778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   damagetag: 
+  repeatTime: .100000001
 --- !u!114 &1504020794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2286,6 +2293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   damagetag: 
+  repeatTime: .100000001
 --- !u!114 &1928633950
 MonoBehaviour:
   m_ObjectHideFlags: 0

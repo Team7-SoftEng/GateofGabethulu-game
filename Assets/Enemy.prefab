@@ -83,6 +83,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   damagetag: Player
+  repeatTime: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,7 +110,7 @@ MonoBehaviour:
   health: 15
   spawnPoint: {fileID: 0}
   maxHealth: 0
-  numDeaths: 0
+  numRespawns: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

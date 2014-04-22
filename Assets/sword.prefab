@@ -54,6 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: 5
   damagetag: Enemy
+  repeatTime: .100000001
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
