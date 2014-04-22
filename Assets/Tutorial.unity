@@ -176,7 +176,7 @@ Prefab:
     - target: {fileID: 11400000, guid: f62fe011b62343648a7e7835c355305c, type: 2}
       propertyPath: insideWeapon
       value: 
-      objectReference: {fileID: 100000, guid: 535b5be812b952b47a956ade09171881, type: 2}
+      objectReference: {fileID: 100000, guid: 5b8e147b3831d074b92166e27ba3bbd2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f62fe011b62343648a7e7835c355305c, type: 2}
   m_RootGameObject: {fileID: 205265622}
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chestOpen: {fileID: 21300000, guid: 6402bf28661e5fa4198701ee31bd7e70, type: 3}
   chestClosed: {fileID: 21300002, guid: 6402bf28661e5fa4198701ee31bd7e70, type: 3}
-  insideWeapon: {fileID: 100000, guid: 535b5be812b952b47a956ade09171881, type: 2}
+  insideWeapon: {fileID: 100000, guid: 5b8e147b3831d074b92166e27ba3bbd2, type: 2}
 --- !u!61 &205265624
 BoxCollider2D:
   m_ObjectHideFlags: 0
