@@ -16,7 +16,7 @@ GameObject:
   - 61: {fileID: 6100002}
   - 114: {fileID: 11400004}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: TestEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,9 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 15
-  spawnPoint: {fileID: 0}
   maxHealth: 0
-  numRespawns: 0
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
