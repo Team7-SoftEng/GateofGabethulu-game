@@ -49,11 +49,11 @@ function Update()
 
 function OnGUI()
 {
-	var locx = 0;
+	var locx = Screen.width - width;
 	var locy = 0;
 	var rect : Rect = new Rect(locx, locy, width, height * 5);
 	GUI.BeginGroup(rect);
-	GUI.DrawTexture(rect,neutralTex);
+	GUI.DrawTexture(new Rect(0,0, width, height * 5),neutralTex);
 	
 	for ( var i = 0; i < 5; i++ )
 	{
