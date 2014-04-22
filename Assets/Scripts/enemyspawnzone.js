@@ -2,34 +2,37 @@
 
 var enemy : GameObject;
 var numEnemies : int = 4;
-var maxRespawnsPerEnemy : int = 1;
+var maxRespawns : int = 8;
 
-private var enemies : ArrayList;
+public var spawnPoints : Transform[];
+
+@HideInInspector
+public var enemies : GameObject[];
+private var numRespawns : int = 0;
 
 function Start () {
-	var children = GetComponentsInChildren(Transform);
-	enemies = new ArrayList();
-	for ( var  i = 0; i < numEnemies; i++ )
+	enemies = new GameObject[numEnemies];
+	for ( var i = 0; i < numEnemies; i++ )
 	{
 		var enemy : GameObject = Instantiate(enemy);
 		enemy.SetActive( true );
-		var hComp = enemy.GetComponent(health);
-		hComp.spawnPoint = children[i%children.length].transform;
-		
-		enemies.Add( enemy );
+		enemy.transform.position = spawnPoints[ Random.Range( 0, spawnPoints.Length - 1 ) ].position;
+		enemy.transform.parent = transform;
+		enemies[i] = enemy;
 	}
 }
 
-function Update () {
-	for ( var i = 0; i < enemies.Count; i++ )
+function OnDeath(obj:GameObject)
+{
+	var hComp = obj.GetComponent(health);
+	if ( numRespawns == maxRespawns )
 	{
-		var hComp = ( enemies[ i ] as GameObject ).GetComponent(health);
-		
-		if ( hComp.numRespawns > maxRespawnsPerEnemy )
-		{
-			Destroy( enemies[i] as GameObject );
-			enemies.RemoveAt( i );
-			i--;
-		}
+		Destroy( obj );
+	}
+	else
+	{
+		obj.transform.position = spawnPoints[ Random.Range( 0, spawnPoints.Length - 1 ) ].position;
+		hComp.health = hComp.maxHealth;
+		numRespawns++;
 	}
 }
