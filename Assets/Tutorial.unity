@@ -452,7 +452,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: .99999994, y: 1}
-  m_Center: {x: 0, y: .75}
+  m_Center: {x: 0, y: 0}
 --- !u!23 &344877332
 Renderer:
   m_ObjectHideFlags: 0
@@ -721,7 +721,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: .5, y: 1}
-  m_Center: {x: -.25, y: .75}
+  m_Center: {x: -.25, y: 0}
 --- !u!23 &493158201
 Renderer:
   m_ObjectHideFlags: 0
