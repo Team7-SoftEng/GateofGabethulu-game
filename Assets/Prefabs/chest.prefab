@@ -13,7 +13,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: healthchest
+  m_Name: chest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.0965614, y: 34.1101799, z: 9.35838032}
+  m_LocalPosition: {x: -35.8357964, y: -9.18037224, z: 9.35838032}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,12 +60,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a108b96bf0af0f498698bd532f7ad8d, type: 3}
+  m_Script: {fileID: 11500000, guid: b2d2cdc7d7376a148bf5973e0cb79d8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   chestOpen: {fileID: 21300000, guid: 6402bf28661e5fa4198701ee31bd7e70, type: 3}
   chestClosed: {fileID: 21300002, guid: 6402bf28661e5fa4198701ee31bd7e70, type: 3}
-  healthRegen: 20
+  prefab: {fileID: 100000, guid: d6f624a46be428f49847fc31baa9a4af, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -7,12 +7,13 @@ public var maxSpeed = 5;
 private var animator : Animator;
 private var weaponManager : WeaponManager;
 private var pickupBehavior : pickupbehavior;
-
+private var hComp : health;
 function Start()
 {
 	animator = GetComponent(Animator);
 	weaponManager = GetComponent(WeaponManager);
 	pickupBehavior = GetComponent(pickupbehavior);
+	hComp = GetComponent(health);
 }
 
 function Update() {
@@ -69,6 +70,11 @@ function Update() {
 				// reset the incomming prefab instance to correct any positional data
 				PrefabUtility.ResetToPrefabState( pickupBehavior.pickupItem );
 				weaponManager.AddWeapon(pickupBehavior.pickupItem);
+				Destroy(pickupBehavior.pickupItem);
+			}
+			else if ( pickupBehavior.pickupItem.tag == "HPRecover" )
+			{
+				hComp.ApplyHealing( pickupBehavior.pickupItem.GetComponent(health).health );
 				Destroy(pickupBehavior.pickupItem);
 			}
 		}
