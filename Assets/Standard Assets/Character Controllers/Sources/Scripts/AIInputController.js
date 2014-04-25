@@ -1,6 +1,7 @@
 ﻿#pragma strict
 
 var maxSpeed = 8;
+var maxDistance = 15;
 
 function Update () {
 	var allObjects = GameObject.FindGameObjectsWithTag("Player");
@@ -17,7 +18,7 @@ function Update () {
 		}
 	}
 	
-	if ( dist < 10 )
+	if ( dist < maxDistance )
 	{
 		var vel : Vector2 = pTransform.position - transform.position;
 		vel.Normalize();
