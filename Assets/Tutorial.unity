@@ -4088,7 +4088,6 @@ GameObject:
   - 50: {fileID: 2043121372}
   - 61: {fileID: 2043121371}
   - 114: {fileID: 2043121373}
-  - 114: {fileID: 2043121379}
   - 212: {fileID: 2043121378}
   - 95: {fileID: 2043121377}
   - 114: {fileID: 2043121376}
@@ -4307,7 +4306,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: a3b3750e7018e0749b69584ebb25c7ca, type: 2}
   m_CullingMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
 --- !u!212 &2043121378
@@ -4333,17 +4332,6 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 92a57a3ded7520541ac06ca722b8517c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &2043121379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2043121370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba246dd47d3b6894a80d022e2cb360e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2043121380
 MonoBehaviour:
   m_ObjectHideFlags: 0
