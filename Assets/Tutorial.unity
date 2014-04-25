@@ -3461,7 +3461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c1a3893a4aae048a9eb4949151cfed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 100000, guid: 58f50dfbdfdf6e142b53af181076af3f, type: 2}
+  enemy: {fileID: 100000, guid: d496d66d845550e4daaeffafcc61d2ed, type: 2}
   numEnemies: 2
   maxRespawns: 4
   endTrigger: {fileID: 808487871}
