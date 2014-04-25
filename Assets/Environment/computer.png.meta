@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6402bf28661e5fa4198701ee31bd7e70
+guid: dd82015a427b9694b99303bc740f7cd5
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -23,19 +23,19 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 0
-    aniso: 1
+    filterMode: -1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
+    wrapMode: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings:
@@ -44,24 +44,6 @@ TextureImporter:
     textureFormat: -2
     compressionQuality: 50
   spriteSheet:
-    sprites:
-    - name: chestsheet_0
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 1
-        width: 27
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: chestsheet_1
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 1
-        width: 27
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
