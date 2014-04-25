@@ -188,7 +188,7 @@ GameObject:
   - 4: {fileID: 220555856}
   - 114: {fileID: 220555855}
   m_Layer: 0
-  m_Name: EnemySpawnZone1
+  m_Name: EnemySpawnZone
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -205,7 +205,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c1a3893a4aae048a9eb4949151cfed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 100000, guid: d496d66d845550e4daaeffafcc61d2ed, type: 2}
+  enemies:
+  - {fileID: 100000, guid: d496d66d845550e4daaeffafcc61d2ed, type: 2}
+  - {fileID: 100000, guid: e7100fc6fd8cf3d4bba4dd439e81e671, type: 2}
   numEnemies: 2
   maxRespawns: 4
   endTrigger: {fileID: 808487871}
@@ -214,14 +216,13 @@ MonoBehaviour:
   - {fileID: 1675153444}
   - {fileID: 1691258228}
   - {fileID: 285587346}
-  enemies: []
 --- !u!4 &220555856
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 220555854}
-  m_LocalRotation: {x: -.705008388, y: 0, z: 0, w: .709199011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .123174667, y: 30.533865, z: 8.20018578}
   m_LocalScale: {x: 15, y: 5, z: 15}
   m_Children: []
@@ -3325,13 +3326,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c1a3893a4aae048a9eb4949151cfed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 100000, guid: d7af5e25c173a2547bfa75b505b07cf9, type: 2}
+  enemies:
+  - {fileID: 100000, guid: d7af5e25c173a2547bfa75b505b07cf9, type: 2}
   numEnemies: 1
   maxRespawns: 0
   endTrigger: {fileID: 1522833256}
   spawnPoints:
   - {fileID: 959339687}
-  enemies: []
 --- !u!1 &1691258227
 GameObject:
   m_ObjectHideFlags: 0

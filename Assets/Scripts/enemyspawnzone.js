@@ -1,24 +1,22 @@
 ﻿#pragma strict
 
-var enemy : GameObject;
-var numEnemies : int = 4;
-var maxRespawns : int = 8;
+public var enemies : GameObject[];
+public var numEnemies : int = 4;
+public var maxRespawns : int = 8;
 public var endTrigger : GameObject;
 public var spawnPoints : Transform[];
 
-@HideInInspector
-public var enemies : GameObject[];
 private var numRespawns : int = 0;
+private var spawnIndex : int = 0;
 
 function Start () {
-	enemies = new GameObject[numEnemies];
 	for ( var i = 0; i < numEnemies; i++ )
 	{
-		var enemy : GameObject = Instantiate(enemy);
+		var enemy : GameObject = Instantiate(enemies[i%enemies.Length]);
 		enemy.SetActive( true );
-		enemy.transform.position = spawnPoints[ Random.Range( 0, spawnPoints.Length - 1 ) ].position;
+		enemy.transform.position = spawnPoints[ spawnIndex % spawnPoints.Length ].position;
 		enemy.transform.parent = transform;
-		enemies[i] = enemy;
+		spawnIndex = spawnIndex + 1;
 	}
 }
 
@@ -40,8 +38,9 @@ function OnDeath(obj:GameObject)
 	}
 	else
 	{
-		obj.transform.position = spawnPoints[ Random.Range( 0, spawnPoints.Length - 1 ) ].position;
+		obj.transform.position = spawnPoints[ spawnIndex % spawnPoints.Length ].position;
 		hComp.health = hComp.maxHealth;
 		numRespawns++;
+		spawnIndex++;
 	}
 }
