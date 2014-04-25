@@ -13,6 +13,9 @@ function Update () {
 	else if(Input.GetKey("d")) {   // Player moves right
 		animator.SetInteger( "Direction", 2 );
 	}
+	else if(Input.GetKey("w")) {
+		animator.SetInteger( "Direction", 3 );
+	}
 	else if(!Input.GetKey("w") && !Input.GetKey("s")) {   // Player not moving
 		animator.SetInteger( "Direction", 0 );	
 	}
