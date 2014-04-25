@@ -2,17 +2,26 @@
 public var health : int = 100;
 @HideInInspector
 public var maxHealth : int;
-@HideInInspector
 
 function Start()
 {
 	maxHealth = health;
 }
 
-function Update()
+function ApplyDamage( damage : int )
 {
+	health -= damage;
 	if ( health <= 0 )
 	{
-		SendMessageUpwards( "OnDeath", this.gameObject, SendMessageOptions.DontRequireReceiver );
+		SendMessageUpwards( "OnDeath", gameObject, SendMessageOptions.DontRequireReceiver );
+	}
+}
+
+function ApplyHealing( heal : int )
+{
+	health += heal;
+	if ( health > maxHealth )
+	{
+		health = maxHealth;
 	}
 }

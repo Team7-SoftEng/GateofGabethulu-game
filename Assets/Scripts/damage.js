@@ -8,7 +8,7 @@ private var lastDamageTime : float = 0;
 function damage(other: Collider2D)
 {
 	if ( other.tag == damagetag && lastDamageTime + repeatTime < Time.timeSinceLevelLoad ) {
-		other.GetComponent( health ).health -= amount;
+		other.GetComponent(health).ApplyDamage(amount);
 		lastDamageTime = Time.timeSinceLevelLoad;
 	}
 }

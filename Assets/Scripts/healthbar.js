@@ -1,4 +1,7 @@
 ﻿#pragma strict
+@script RequireComponent(health)
+@script RequireComponent(SpriteRenderer)
+
 public var healthfull : GUIStyle;
 public var healthempty : GUIStyle;
 public var emptyTex : Texture2D;
