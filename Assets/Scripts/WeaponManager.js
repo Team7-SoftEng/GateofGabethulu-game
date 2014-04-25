@@ -29,20 +29,15 @@ function DisableWeapons()
 	}
 }
 
-function Update()
+function SwitchWeapon( index : int )
 {
-	// check for inventory switches
-	for ( var i : int = 1; i <= 5; i++ )
+	if ( index >= 0 && index < weapons.Length && index != cweaponIndex )
 	{
-		if ( Input.GetKey( i.ToString() ) )
+		if ( weapons[ index ] != null )
 		{
-			if ( weapons[ i - 1 ] != null )
-			{
-				DisableWeapons();
-				weapons[ i - 1 ].SetActive( true );
-				cweaponIndex = i - 1;
-				break;
-			}
+			DisableWeapons();
+			weapons[ index ].SetActive( true );
+			cweaponIndex = index;
 		}
 	}
 }
@@ -91,12 +86,13 @@ function OnGUI()
 	GUI.EndGroup();
 }
 
-function SetWeapon( inweapon : GameObject )
+function AddWeapon( inweapon : GameObject )
 {
 	var weapon : GameObject = Instantiate(inweapon);
 	weapon.transform.parent = transform;
 	weapon.transform.localPosition = weapon.transform.position;
 	weapon.SetActive(true);
+	
 	var i : int;
 	
 	// find a free slot

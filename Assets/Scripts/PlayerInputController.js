@@ -1,12 +1,18 @@
 ﻿#pragma strict
 @script RequireComponent(Animator)
+@script RequireComponent(WeaponManager)
+@script RequireComponent(pickupbehavior);
 
 public var maxSpeed = 5;
 private var animator : Animator;
+private var weaponManager : WeaponManager;
+private var pickupBehavior : pickupbehavior;
 
 function Start()
 {
 	animator = GetComponent(Animator);
+	weaponManager = GetComponent(WeaponManager);
+	pickupBehavior = GetComponent(pickupbehavior);
 }
 
 function Update() {
@@ -43,6 +49,30 @@ function Update() {
 		BroadcastMessage("FireWeapon", SendMessageOptions.DontRequireReceiver );
 	}
 	
+	// weapon switcher
+	for ( var i : int = 1; i < 6; i++ )
+	{
+		if ( Input.GetKey( i.ToString() ) )
+		{
+			weaponManager.SwitchWeapon( i - 1 );
+			break;
+		}
+	}
+	
+	// pickup any items we touch
+	if ( Input.GetButton("TakeItem") )
+	{
+		if ( pickupBehavior.pickupItem != null )
+		{
+			if ( pickupBehavior.pickupItem.tag == "Weapon" )
+			{
+				// reset the incomming prefab instance to correct any positional data
+				PrefabUtility.ResetToPrefabState( pickupBehavior.pickupItem );
+				weaponManager.AddWeapon(pickupBehavior.pickupItem);
+				Destroy(pickupBehavior.pickupItem);
+			}
+		}
+	}
 	
 	// send wanted velocity to the collision system
 	var vel = new Vector2( h, v );

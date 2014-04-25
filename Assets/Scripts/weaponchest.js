@@ -2,34 +2,51 @@
 
 var chestOpen : Sprite;
 var chestClosed : Sprite;
-var insideWeapon : GameObject;
+var prefab : GameObject;
 
 private var open : boolean = false;
-private var empty : boolean = false;
+private var pickup : GameObject;
 
 function Start () {
 	GetComponent(SpriteRenderer).sprite = chestClosed;
+	pickup = null;
 }
-
 
 function OnTriggerEnter2D( other: Collider2D )
 {
-	if ( other.tag == "Player" && !open )
+	if ( other.tag == "Player" )
 	{
-		GetComponent(SpriteRenderer).sprite = chestOpen;
-		var child = transform.FindChild("chestcontent");
-		child.GetComponent(SpriteRenderer).sprite = insideWeapon.GetComponent(SpriteRenderer).sprite;
-		open = true;
+		if ( !open )
+		{
+			GetComponent(SpriteRenderer).sprite = chestOpen;
+			
+			// create an instance of the static object
+			pickup = PrefabUtility.InstantiatePrefab(prefab);
+			pickup.SetActive( true );
+			pickup.transform.parent = transform;
+			pickup.transform.position = transform.position;
+			
+			open = true;
+		}
+		
+		// send this pickup to the object that touched us
+		if ( pickup != null )
+		{
+			other.gameObject.SendMessage("OnPickupAvailable", pickup);
+		}
 	}
 }
 
-function OnTriggerStay2D( other: Collider2D )
+function OnTriggerLeave2D( other: Collider2D )
 {
-	if ( other.tag == "Player" && !empty && open && Input.GetKey( "e" ) )
+	if ( other.tag == "Player" )
 	{
-		Destroy(transform.FindChild("chestcontent").gameObject);
-		var man : WeaponManager = other.GetComponent(WeaponManager);
-		man.SetWeapon( insideWeapon );
-		empty = true;
+		// the player has moved away from the chest, so they can no longer pick up the item
+		if ( pickup != null )
+		{
+			other.gameObject.SendMessage("OnPickupUnavailable");
+		}
 	}
 }
+
+
