@@ -2,9 +2,6 @@
 
 var maxSpeed = 8;
 
-function Start () {
-}
-
 function Update () {
 	var allObjects = GameObject.FindGameObjectsWithTag("Player");
 	var dist = 100000;

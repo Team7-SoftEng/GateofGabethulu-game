@@ -4167,7 +4167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c1a3893a4aae048a9eb4949151cfed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 100000, guid: a178edbb65de4f74796009e050fe079a, type: 2}
+  enemy: {fileID: 100000, guid: 58f50dfbdfdf6e142b53af181076af3f, type: 2}
   numEnemies: 4
   maxRespawns: 8
   spawnPoints:
