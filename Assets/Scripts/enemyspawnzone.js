@@ -3,7 +3,7 @@
 var enemy : GameObject;
 var numEnemies : int = 4;
 var maxRespawns : int = 8;
-
+public var endTrigger : GameObject;
 public var spawnPoints : Transform[];
 
 @HideInInspector
@@ -22,12 +22,21 @@ function Start () {
 	}
 }
 
+function Update()
+{
+	if( numEnemies == 0 && endTrigger )
+	{
+		endTrigger.SendMessage("OnEnemiesDefeated");
+	}
+}
+
 function OnDeath(obj:GameObject)
 {
 	var hComp = obj.GetComponent(health);
 	if ( numRespawns == maxRespawns )
 	{
 		Destroy( obj );
+		numEnemies--;
 	}
 	else
 	{

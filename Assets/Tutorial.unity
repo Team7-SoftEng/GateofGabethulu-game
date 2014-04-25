@@ -1037,9 +1037,9 @@ GameObject:
   - 4: {fileID: 808487877}
   - 33: {fileID: 808487876}
   - 23: {fileID: 808487875}
-  - 114: {fileID: 808487874}
   - 114: {fileID: 808487873}
   - 61: {fileID: 808487872}
+  - 114: {fileID: 808487874}
   m_Layer: 0
   m_Name: LabDoor
   m_TagString: Untagged
@@ -1080,12 +1080,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 808487871}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4c910798762f5e408781532bcba4299, type: 3}
+  m_Script: {fileID: 11500000, guid: b9a5690b48305ba41a3ec609bb921b09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Motion: 0
-  maxAmount: 10
-  step: .0500000007
 --- !u!23 &808487875
 Renderer:
   m_ObjectHideFlags: 0
@@ -1121,8 +1118,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 808487871}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.5125656, y: 27.1906509, z: 7.66156149}
-  m_LocalScale: {x: 5, y: 12, z: 12}
+  m_LocalPosition: {x: 29.348774, y: 28.0268612, z: 7.66156149}
+  m_LocalScale: {x: 5, y: 20, z: 12}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1 &883245995
@@ -4114,6 +4111,7 @@ MonoBehaviour:
   enemy: {fileID: 100000, guid: 58f50dfbdfdf6e142b53af181076af3f, type: 2}
   numEnemies: 4
   maxRespawns: 8
+  endTrigger: {fileID: 808487871}
   spawnPoints:
   - {fileID: 1597719042}
   - {fileID: 1675153444}
