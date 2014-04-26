@@ -32,7 +32,7 @@ function OnTriggerEnter2D( other: Collider2D )
 		// send this pickup to the object that touched us
 		if ( pickup != null )
 		{
-			other.gameObject.SendMessage("OnPickupAvailable", pickup);;
+			other.gameObject.SendMessage("OnPickupAvailable", pickup);
 		}
 	}
 }
