@@ -89,8 +89,8 @@ function OnGUI()
 function AddWeapon( inweapon : GameObject )
 {
 	var weapon : GameObject = Instantiate(inweapon);
+	weapon.GetComponent(positionweapon).PositionWeapon( transform.position );
 	weapon.transform.parent = transform;
-	weapon.transform.localPosition = weapon.transform.position;
 	weapon.SetActive(true);
 	
 	var i : int;

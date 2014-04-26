@@ -67,8 +67,6 @@ function Update() {
 		{
 			if ( pickupBehavior.pickupItem.tag == "Weapon" )
 			{
-				// reset the incomming prefab instance to correct any positional data
-				PrefabUtility.ResetToPrefabState( pickupBehavior.pickupItem );
 				weaponManager.AddWeapon(pickupBehavior.pickupItem);
 				Destroy(pickupBehavior.pickupItem);
 			}

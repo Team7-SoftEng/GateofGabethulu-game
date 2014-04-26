@@ -21,7 +21,7 @@ function OnTriggerEnter2D( other: Collider2D )
 			GetComponent(SpriteRenderer).sprite = chestOpen;
 			
 			// create an instance of the static object
-			pickup = PrefabUtility.InstantiatePrefab(prefab);
+			pickup = Instantiate(prefab);
 			pickup.SetActive( true );
 			pickup.transform.parent = transform;
 			pickup.transform.position = transform.position;
@@ -32,7 +32,7 @@ function OnTriggerEnter2D( other: Collider2D )
 		// send this pickup to the object that touched us
 		if ( pickup != null )
 		{
-			other.gameObject.SendMessage("OnPickupAvailable", pickup);
+			other.gameObject.SendMessage("OnPickupAvailable", pickup);;
 		}
 	}
 }
