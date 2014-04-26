@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1b4f8fc5f19907f4390d93eb86dab2e4
+guid: 0192144ae94487b47be1ffbb821d6957
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -45,110 +45,110 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: businessman_0
+    - name: maid_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 104
+        x: 0
+        y: 96
         width: 20
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: businessman_1
+    - name: maid_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 104
+        x: 33
+        y: 96
         width: 19
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: businessman_2
+    - name: maid_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 104
+        x: 65
+        y: 96
         width: 20
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: businessman_3
+    - name: maid_3
       rect:
         serializedVersion: 2
-        x: 13
-        y: 72
+        x: 3
+        y: 64
         width: 15
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: businessman_4
+    - name: maid_4
       rect:
         serializedVersion: 2
-        x: 45
-        y: 72
+        x: 35
+        y: 64
         width: 15
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: businessman_5
+    - name: maid_5
       rect:
         serializedVersion: 2
-        x: 77
-        y: 72
-        width: 17
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: businessman_6
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 40
-        width: 17
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-    - name: businessman_7
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 40
+        x: 67
+        y: 64
         width: 15
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: businessman_8
+    - name: maid_6
       rect:
         serializedVersion: 2
-        x: 78
-        y: 40
+        x: 3
+        y: 32
         width: 15
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: businessman_9
+    - name: maid_7
       rect:
         serializedVersion: 2
-        x: 12
-        y: 8
+        x: 35
+        y: 32
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: maid_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 32
+        width: 15
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: maid_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
         width: 19
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: businessman_10
+    - name: maid_10
       rect:
         serializedVersion: 2
-        x: 43
-        y: 8
+        x: 33
+        y: 0
         width: 19
         height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: businessman_11
+    - name: maid_11
       rect:
         serializedVersion: 2
-        x: 74
-        y: 8
+        x: 64
+        y: 0
         width: 19
         height: 31
       alignment: 0
