@@ -7,13 +7,12 @@ public var healthempty : GUIStyle;
 public var emptyTex : Texture2D;
 public var fullTex : Texture2D;
 public var size : Vector2 = new Vector2( 250, 50 );
+public var offset : float;
 private var hcomp : health;
 private var barDisplay : float;
-private var sprite : SpriteRenderer;
 
 function Start () {
 	barDisplay = 1;
-	sprite = GetComponent(SpriteRenderer);
 	hcomp = GetComponent(health);
 }
 
@@ -27,7 +26,7 @@ function OnGUI()
 	var worldPoint = transform.position;
 	
 	//now the middle top point
-	worldPoint.y += sprite.bounds.extents.y;
+	worldPoint.y += offset;
 	
 	// convert to gui space
 	var loc = Camera.main.WorldToScreenPoint( worldPoint );

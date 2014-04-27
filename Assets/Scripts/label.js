@@ -1,15 +1,11 @@
 ﻿#pragma strict
 
 var text : String;
-private var sprite : SpriteRenderer;
-
-function Start () {
-	sprite = GetComponent(SpriteRenderer);
-}
+var offset : float;
 
 function OnGUI () {
 	var point = transform.position;
-	point.y += sprite.bounds.extents.y;
+	point.y += offset;
 	
 	point = Camera.main.WorldToScreenPoint(point);
 	point.y = Screen.height - point.y;
