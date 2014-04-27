@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Dr. Yourdon Constantine
+  offset: 2
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
