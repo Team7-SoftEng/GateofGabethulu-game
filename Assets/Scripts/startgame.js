@@ -8,7 +8,7 @@ function Start () {
 	if ( args.Length > 1 )
 	{
 		player.GetComponent(label).text = args[1];
-		var h : int = parseInt(args[5]);
+		var h : int = parseInt(args[4]);
 		player.GetComponent(health).health = h;
 		player.GetComponent(health).maxHealth = h;
 	}
