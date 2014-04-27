@@ -18,6 +18,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400012}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -233,6 +234,7 @@ MonoBehaviour:
   emptyTex: {fileID: 2800000, guid: ad4f54b933545044e81c2e9740768314, type: 3}
   fullTex: {fileID: 2800000, guid: c8e419b2c194e8c42b228cc3d9f163b4, type: 3}
   size: {x: 50, y: 12}
+  offset: 2
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -275,6 +277,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 0}
   numDeaths: 0
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8dd077945bfd74418de02c42f7562d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: playerName
+  offset: 3
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
