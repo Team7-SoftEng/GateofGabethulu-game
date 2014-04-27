@@ -2,7 +2,7 @@
 
 var chestOpen : Sprite;
 var chestClosed : Sprite;
-var prefab : GameObject;
+var objectInside : GameObject;
 
 private var open : boolean = false;
 private var pickup : GameObject;
@@ -21,7 +21,7 @@ function OnTriggerEnter2D( other: Collider2D )
 			GetComponent(SpriteRenderer).sprite = chestOpen;
 			
 			// create an instance of the static object
-			pickup = Instantiate(prefab);
+			pickup = Instantiate(objectInside);
 			pickup.SetActive( true );
 			pickup.transform.parent = transform;
 			pickup.transform.position = transform.position;
