@@ -102,7 +102,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc186bd28013b9f4f9a02f2696334d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Movementtxt: {fileID: 31073388}
 --- !u!131 &31073390
 GUITexture:
   m_ObjectHideFlags: 0
@@ -3804,7 +3803,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc186bd28013b9f4f9a02f2696334d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Movementtxt: {fileID: 0}
 --- !u!1 &1322100190
 GameObject:
   m_ObjectHideFlags: 0
