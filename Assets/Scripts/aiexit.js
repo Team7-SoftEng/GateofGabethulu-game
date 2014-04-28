@@ -23,7 +23,7 @@ function Update()
 {
 	if ( update )
 	{
-		if ( GetComponent(AIInputController).distanceToTarget < 30 )
+		if ( GetComponent(AIInputController).distanceToTarget < 2 )
 		{
 			Destroy( obj2 );
 			Destroy( gameObject );
