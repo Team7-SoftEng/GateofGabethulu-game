@@ -18,6 +18,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400008}
+  - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: burris
   m_TagString: Enemy
@@ -124,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 8
   maxDistance: 15
+  targetTag: 
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -151,6 +153,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Dr. Burris
   offset: 2
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba108e29cc8d3844a8197352c314601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  extraSprite: {fileID: 100000, guid: 757beff3e67e4a14e96b158a521e5864, type: 2}
+  targetTag: burristExit
+  offset: 3
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

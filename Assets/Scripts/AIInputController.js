@@ -2,9 +2,13 @@
 
 var maxSpeed = 8;
 var maxDistance = 15;
+var targetTag = "Player";
+
+@HideInInspector
+var distanceToTarget = 0;
 
 function Update () {
-	var allObjects = GameObject.FindGameObjectsWithTag("Player");
+	var allObjects = GameObject.FindGameObjectsWithTag(targetTag);
 	var dist = 100000;
 	var pTransform : Transform;
 	for ( var child : GameObject in allObjects )
@@ -17,7 +21,7 @@ function Update () {
 			pTransform = child.transform;
 		}
 	}
-	
+	distanceToTarget = dist;
 	if ( dist < maxDistance )
 	{
 		var vel : Vector2 = pTransform.position - transform.position;
