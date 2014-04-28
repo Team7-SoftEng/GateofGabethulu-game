@@ -224,3 +224,4 @@ Obj/
 *.user
 *.userprefs
 *.DS_store
+output_log.txt
