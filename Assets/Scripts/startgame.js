@@ -5,7 +5,7 @@ var player : GameObject;
 function Start () {
 	var args : String[] = System.Environment.GetCommandLineArgs();
 	
-	if ( args.Length > 1 )
+	if ( args.Length >= 5 )
 	{
 		player.GetComponent(label).text = args[1];
 		var h : int = parseInt(args[4]);
